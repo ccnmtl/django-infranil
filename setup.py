@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="django-infranil",
@@ -8,12 +8,12 @@ setup(
     url="http://wiki.ccnmtl.columbia.edu/",
     description="almost flat pages",
     long_description="Almost Flat Pages",
-    install_requires = [
+    install_requires=[
         "Django",
     ],
-    scripts = [],
-    license = "BSD",
-    platforms = ["any"],
+    scripts=[],
+    license="BSD",
+    platforms=["any"],
     zip_safe=False,
     packages=['pagetree'],
     test_suite='nose.collector',
