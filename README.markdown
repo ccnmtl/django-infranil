@@ -1,5 +1,7 @@
 # django-infranil
 
+[![Build Status](https://travis-ci.org/ccnmtl/django-infranil.png)](https://travis-ci.org/ccnmtl/django-infranil)
+
 Infranil can be thought of as `TemplateView` on steroids. It allows
 you to servce up a directory of Django templates with a minimum of
 ceremony and configuration.
