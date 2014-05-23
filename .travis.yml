@@ -6,4 +6,4 @@ install:
 script:
   - python runtests.py
 after_success:
-  - coveralls
+  - coveralls --base_dir infranil
