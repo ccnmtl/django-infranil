@@ -105,3 +105,19 @@ instances at different paths:
 
 Of course, `InfranilView` is a basic Django class-based view, so you
 can subclass it, combine it with mixins, etc.
+
+## Suggestions
+
+Infranil combined with
+[django-flatblocks](https://github.com/funkybob/django-flatblocks) is
+a powerful combination. If they're both set up, you've got the basics
+of a rudimentary CMS with full control over which parts are
+user-editable through the web and which parts are designer controlled
+and in version control.
+
+## Infranil?
+
+Yeah, the name is super nerdy. I had the idea for this library when
+pondering the solution space of flatblocks and flatpages. An 'infranil
+manifold' in topology is an "[almost flat](http://en.wikipedia.org/wiki/Almost_flat_manifold)" manifold.
+
