@@ -119,5 +119,5 @@ and in version control.
 
 Yeah, the name is super nerdy. I had the idea for this library when
 pondering the solution space of flatblocks and flatpages. An 'infranil
-manifold' in topology is an "[almost flat](http://en.wikipedia.org/wiki/Almost_flat_manifold)" manifold.
+manifold' in Riemannian Geometry is an "[almost flat](http://en.wikipedia.org/wiki/Almost_flat_manifold)" manifold.
 
