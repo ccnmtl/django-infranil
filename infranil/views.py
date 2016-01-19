@@ -1,7 +1,7 @@
 from django.views.generic.base import View
 from django.shortcuts import render
 from django.http import HttpResponseNotFound
-from django.template.base import TemplateDoesNotExist
+from django.template import TemplateDoesNotExist
 import os.path
 import re
 

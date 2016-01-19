@@ -5,7 +5,7 @@ $ ./ve/bin/pip install -r test_reqs.txt
 $ ./ve/bin/python runtests.py
 """
 
-
+import django
 from django.conf import settings
 from django.core.management import call_command
 
@@ -19,22 +19,13 @@ def main():
             'django.contrib.contenttypes',
             'django.contrib.sessions',
             'infranil',
-            'django_nose',
             'django_jenkins',
         ),
-        TEST_RUNNER = 'django_nose.NoseTestSuiteRunner',
+        TEST_RUNNER = 'django.test.runner.DiscoverRunner',
 
-        NOSE_ARGS = [
-            '--with-coverage',
-            '--cover-package=infranil',
-        ],
         COVERAGE_EXCLUDES_FOLDERS = ['migrations'],
         ROOT_URLCONF = 'infranil.tests.urls',
-        SOUTH_TESTS_MIGRATE=False,
 
-        JENKINS_TASKS = (
-            'django_jenkins.tasks.with_coverage',
-        ),
         PROJECT_APPS = [
             'infranil',
         ],
@@ -51,6 +42,7 @@ def main():
         },
     )
 
+    django.setup()
     # Fire off the tests
     call_command('test')
     call_command('jenkins')
