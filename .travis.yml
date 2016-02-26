@@ -3,7 +3,9 @@ python:
   - "2.7"
 install:
   - pip install -r test_reqs.txt
+  - pip install coveralls
 script:
   - python runtests.py
+  - coverage run --source=infranil python runtests.py
 after_success:
-  - coveralls --base_dir infranil
+  - coveralls
