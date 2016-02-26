@@ -7,6 +7,6 @@ install:
   - pip install coveralls
 script:
   - python runtests.py
-  - coverage run --source=infranil python runtests.py
+  - coverage run --source=infranil runtests.py
 after_success:
   - coveralls
