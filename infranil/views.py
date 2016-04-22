@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 from django.views.generic.base import View
 from django.shortcuts import render
 from django.http import HttpResponseNotFound
