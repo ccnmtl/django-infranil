@@ -1,10 +1,9 @@
 from __future__ import unicode_literals
 
-from django.conf.urls import patterns
+from django.conf.urls import url
 from .views import InfranilView
 
 
-urlpatterns = patterns(
-    '',
-    (r'^(?P<path>.*)$', InfranilView.as_view()),
-)
+urlpatterns = [
+    url(r'^(?P<path>.*)$', InfranilView.as_view()),
+]
