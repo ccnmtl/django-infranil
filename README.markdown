@@ -57,7 +57,7 @@ In your `urls.py`, you add:
 
     from infranil.views import InfranilView
     ...
-    (r'^infranil/(?P<path>.*)$', InfranilView.as_view()),
+    url(r'^infranil/(?P<path>.*)$', InfranilView.as_view()),
 
 Make an `infranil` directory in your project's templates directory. In
 there, add a `foo.html` file with normal Django template syntax. Now
@@ -95,16 +95,16 @@ anyway.
 You can also override the base template directory when you instantiate
 the view:
 
-    (r'^infranil/(?P<path>.*)$',
-     InfranilView.as_view(base_dir="somewhere_else")),
+    url(r'^infranil/(?P<path>.*)$',
+       InfranilView.as_view(base_dir="somewhere_else")),
 
 This is particularly handy if you want to have multiple Infranil
 instances at different paths:
 
-    (r'^one/(?P<path>.*)$',
-     InfranilView.as_view(base_dir="infranil_one")),
-    (r'^two/(?P<path>.*)$',
-     InfranilView.as_view(base_dir="infranil_two")),
+    url(r'^one/(?P<path>.*)$',
+       InfranilView.as_view(base_dir="infranil_one")),
+    url(r'^two/(?P<path>.*)$',
+       InfranilView.as_view(base_dir="infranil_two")),
 
 Of course, `InfranilView` is a basic Django class-based view, so you
 can subclass it, combine it with mixins, etc.
