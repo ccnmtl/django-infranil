@@ -2,7 +2,7 @@ Django==1.11.2
 Markdown==2.6.8
 coverage==4.4.1
 flake8==3.3.0
-django-jenkins==0.18.1
+django-jenkins==0.110.0
 pep8==1.7.0
 pyflakes==1.0.0
 django-markwhat==1.5
