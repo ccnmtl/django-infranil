@@ -21,16 +21,16 @@ def main():
             'infranil',
             'django_jenkins',
         ),
-        TEST_RUNNER = 'django.test.runner.DiscoverRunner',
+        TEST_RUNNER='django.test.runner.DiscoverRunner',
 
-        COVERAGE_EXCLUDES_FOLDERS = ['migrations'],
-        ROOT_URLCONF = 'infranil.tests.urls',
+        COVERAGE_EXCLUDES_FOLDERS=['migrations'],
+        ROOT_URLCONF='infranil.tests.urls',
 
-        PROJECT_APPS = [
+        PROJECT_APPS=[
             'infranil',
         ],
         # Django replaces this, but it still wants it. *shrugs*
-        DATABASES = {
+        DATABASES={
             'default': {
                 'ENGINE': 'django.db.backends.sqlite3',
                 'NAME': ':memory:',
@@ -40,6 +40,12 @@ def main():
                 'PASSWORD': '',
             }
         },
+        TEMPLATES=[
+            {
+                'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                'APP_DIRS': True,
+            },
+        ]
     )
 
     django.setup()
