@@ -4,7 +4,7 @@ setup(
     name="django-infranil",
     version="1.1.0",
     author="Anders Pearson",
-    author_email="anders@columbia.edu",
+    author_email="ccnmtl-dev@columbia.edu",
     url="https://github.com/ccnmtl/django-infranil",
     description="almost flat pages",
     long_description="Almost Flat Pages",
