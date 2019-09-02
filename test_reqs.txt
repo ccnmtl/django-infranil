@@ -1,4 +1,4 @@
-Django==1.11.23 # pyup: <2.0
+Django==1.11.24 # pyup: <2.0
 Markdown==3.1.1
 coverage==4.5.4
 flake8==3.7.8
