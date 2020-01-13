@@ -1,6 +1,6 @@
 Django==1.11.27 # pyup: <2.0
 Markdown==3.1.1
-coverage==5.0.2
+coverage==5.0.3
 flake8==3.7.9
 django-jenkins==0.110.0
 pep8==1.7.1
