@@ -4,7 +4,7 @@ setup(
     name="django-infranil",
     version="1.1.0",
     author="Anders Pearson",
-    author_email="ccnmtl-dev@columbia.edu",
+    author_email="ctl-dev@columbia.edu",
     url="https://github.com/ccnmtl/django-infranil",
     description="almost flat pages",
     long_description="Almost Flat Pages",
@@ -16,6 +16,5 @@ setup(
     platforms=["any"],
     zip_safe=False,
     packages=['infranil'],
-    test_suite='nose.collector',
     include_package_data=True,
 )
