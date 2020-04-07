@@ -6,4 +6,4 @@ django-jenkins==0.110.0
 pep8==1.7.1
 pyflakes==2.1.1
 django-markwhat==1.6.2
-coveralls==1.11.1
+coveralls==2.0.0
