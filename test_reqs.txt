@@ -1,5 +1,5 @@
 Django>=2.2.12,<3
-Markdown==3.3.3
+Markdown==3.3.4
 coverage==5.4
 flake8==3.8.4
 django-jenkins==0.110.0
