@@ -1,4 +1,4 @@
-Django>=4.2.13,<5
+Django>=5.0.7,<6
 Markdown==3.6
 coverage==7.5.4
 flake8==7.1.0
