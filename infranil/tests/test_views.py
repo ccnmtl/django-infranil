@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 import unittest
 from django.test.client import Client
-from django.utils.encoding import smart_text
+from django.utils.encoding import smart_str
 from infranil.views import clean_path
 
 
@@ -40,7 +40,7 @@ class ViewTest(unittest.TestCase):
         for path, content in test_cases:
             r = self.c.get(path)
             self.assertEqual(r.status_code, 200)
-            self.assertEqual(smart_text(r.content.strip()), content)
+            self.assertEqual(smart_str(r.content.strip()), content)
 
     def test_404(self):
         r = self.c.get("/infranil/nonexistant/")

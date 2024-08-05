@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
 
-from django.conf.urls import url
+from django.urls import re_path
 from .views import InfranilView
 
 
 urlpatterns = [
-    url(r'^(?P<path>.*)$', InfranilView.as_view()),
+    re_path(r'^(?P<path>.*)$', InfranilView.as_view()),
 ]
