@@ -17,6 +17,6 @@ jobs:
       - name: Install virtual environment
         run: python -m venv ve
       - name: Install requirements
-        run: ./ve/bin/python install -r test_reqs.txt
+        run: ./ve/bin/pip install -r test_reqs.txt
       - name: Run tests
         run: ./ve/bin/python runtests.py
