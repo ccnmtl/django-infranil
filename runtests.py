@@ -19,7 +19,6 @@ def main():
             'django.contrib.contenttypes',
             'django.contrib.sessions',
             'infranil',
-            'django_jenkins',
         ),
         TEST_RUNNER='django.test.runner.DiscoverRunner',
 
@@ -51,7 +50,6 @@ def main():
     django.setup()
     # Fire off the tests
     call_command('test')
-    call_command('jenkins')
 
 if __name__ == '__main__':
     main()

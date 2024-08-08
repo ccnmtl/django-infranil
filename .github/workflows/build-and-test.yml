@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-24.04
     strategy:
       matrix:
-          python-version: [3.8, "3.12"]
+          python-version: ["3.12"]
     steps:
       - uses: actions/checkout@v4
 
@@ -17,6 +17,6 @@ jobs:
       - name: Install virtual environment
         run: python -m venv ve
       - name: Install requirements
-        run: ./ve/bin/python install -r test_reqs.txt
+        run: ./ve/bin/pip install -r test_reqs.txt
       - name: Run tests
         run: ./ve/bin/python runtests.py
