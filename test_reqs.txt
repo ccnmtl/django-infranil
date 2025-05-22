@@ -1,6 +1,6 @@
 Django>=4.2.13,<5
 Markdown==3.8
-coverage==7.8.0
+coverage==7.8.1
 flake8==7.2.0
 pep8==1.7.1
 pyflakes==3.3.2
