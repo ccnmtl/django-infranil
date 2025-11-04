@@ -1,5 +1,5 @@
 Django>=4.2.13,<5
-Markdown==3.9
+Markdown==3.10
 coverage==7.11.0
 flake8==7.2.0
 pep8==1.7.1
