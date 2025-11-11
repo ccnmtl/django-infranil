@@ -22,7 +22,6 @@ def main():
         ),
         TEST_RUNNER='django.test.runner.DiscoverRunner',
 
-        COVERAGE_EXCLUDES_FOLDERS=['migrations'],
         ROOT_URLCONF='infranil.tests.urls',
 
         PROJECT_APPS=[
@@ -50,6 +49,7 @@ def main():
     django.setup()
     # Fire off the tests
     call_command('test')
+
 
 if __name__ == '__main__':
     main()

@@ -7,6 +7,5 @@ install:
 script:
   - python setup.py flake8
   - python runtests.py
-  - coverage run --source=infranil runtests.py
 after_success:
   - coveralls
