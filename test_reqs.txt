@@ -5,4 +5,4 @@ flake8==7.2.0
 pep8==1.7.1
 pyflakes==3.3.2
 django-markwhat==2025.5.31
-coveralls==4.0.1
+coveralls==4.0.2
