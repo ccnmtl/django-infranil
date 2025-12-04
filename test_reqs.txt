@@ -1,4 +1,4 @@
-Django>=4.2.13,<5
+Django>=5.2,<6
 Markdown==3.10
 flake8==7.2.0
 pep8==1.7.1
