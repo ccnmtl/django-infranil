@@ -1,5 +1,5 @@
 Django>=6.0.5,<7
-Markdown==3.10.2
+Markdown==3.10.3
 flake8==7.2.0
 pep8==1.7.1
 pyflakes==3.3.2
